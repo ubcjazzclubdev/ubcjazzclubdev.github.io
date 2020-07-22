@@ -1,5 +1,8 @@
 # club-website
 
+Club website, built on vue.js
+Implements firebase
+
 ## Project setup
 ```
 npm install
