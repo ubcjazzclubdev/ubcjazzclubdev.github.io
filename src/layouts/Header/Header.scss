@@ -1,0 +1,76 @@
+/* FONT IMPORTED */
+
+/* Fira Sans */
+@import url("https://fonts.googleapis.com/css?family=Trocchi");
+
+/* HEADER */
+
+/* NAVIGATION BAR */
+nav {
+  overflow: hidden;
+  background-color: transparent;
+  top: 0;
+  width: 100%;
+  padding-top: 1rem;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    align-items: center;
+
+    li {
+      vertical-align: middle;
+      font-family: "Trocchi", sans-serif;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      font-size: 20px;
+
+      &:first-child {
+        padding: unset;
+        margin-right: auto;
+      }
+
+      &:last-child {
+        padding-right: 40px;
+      }
+
+      a {
+        color: #FFF;
+        text-decoration: none;
+        padding: 20px;
+        display: inline-block;
+        text-transform: uppercase;
+        &:hover {
+          transition: 0.2s;
+          border-bottom: 3px solid var(--club-yellow);
+        }
+      }
+
+      #logo {
+        padding: unset;
+        padding-top: 1rem;
+        
+        &:hover {
+          color: unset;
+          border-bottom: unset;
+        }
+    
+        #menu-icon {
+          width: 4rem;
+          height: 100%;
+          display: inline-block;
+          vertical-align: middle;
+        }
+      
+        #menu-icon-text {
+          font-size: 40px;
+          letter-spacing: 3px;
+          padding: 10px;
+          color: var(--club-yellow);
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}
