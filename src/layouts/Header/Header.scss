@@ -1,38 +1,76 @@
 /* FONT IMPORTED */
 
 /* Fira Sans */
-@import url("https://fonts.googleapis.com/css?family=Fira+Sans");
+@import url("https://fonts.googleapis.com/css?family=Trocchi");
 
-/** HEADER */
+/* HEADER */
 
-/** NAVIGATION BAR */
+/* NAVIGATION BAR */
 nav {
   overflow: hidden;
   background-color: transparent;
   top: 0;
   width: 100%;
+  padding-top: 1rem;
+
   ul {
-    text-align: center;
-    list-style-type: none;
     list-style-type: none;
     margin: 0;
-    padding: 15px;
+    display: flex;
+    align-items: center;
+
     li {
-      display: inline;
-      font-family: "Fira Sans", sans-serif;
-      font-size: 17px;
+      vertical-align: middle;
+      font-family: "Trocchi", sans-serif;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      font-size: 20px;
+
+      &:first-child {
+        padding: unset;
+        margin-right: auto;
+      }
+
+      &:last-child {
+        padding-right: 40px;
+      }
+
       a {
-        color: #000;
+        color: #FFF;
         text-decoration: none;
-        padding: 14px;
+        padding: 20px;
+        display: inline-block;
+        text-transform: uppercase;
         &:hover {
-          background-color: #333;
+          transition: 0.2s;
+          border-bottom: 3px solid var(--club-yellow);
         }
       }
-    }
 
-    #menu-icon {
-      width: 3rem;
+      #logo {
+        padding: unset;
+        padding-top: 1rem;
+        
+        &:hover {
+          color: unset;
+          border-bottom: unset;
+        }
+    
+        #menu-icon {
+          width: 4rem;
+          height: 100%;
+          display: inline-block;
+          vertical-align: middle;
+        }
+      
+        #menu-icon-text {
+          font-size: 40px;
+          letter-spacing: 3px;
+          padding: 10px;
+          color: var(--club-yellow);
+          vertical-align: middle;
+        }
+      }
     }
   }
 }
